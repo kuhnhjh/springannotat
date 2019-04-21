@@ -1,5 +1,6 @@
 package com.kuhn.spring.test;
 
+import com.kuhn.spring.component.PersonController;
 import com.kuhn.spring.config.MianConfig;
 import com.kuhn.spring.dto.Person;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -11,11 +12,13 @@ public class Test {
     @org.junit.Test
     public void textconfig(){
         AnnotationConfigApplicationContext annotationConfigApplicationContext=new AnnotationConfigApplicationContext(MianConfig.class);
-//        Person person= (Person) annotationConfigApplicationContext.getBean("person");
-        String[] ss=annotationConfigApplicationContext.getBeanDefinitionNames();
-        for(String  s:ss){
-            System.out.println(s);
-        }
+       PersonController personController= (PersonController) annotationConfigApplicationContext.getBean(PersonController.class);
+       // PersonController personController2= (PersonController) annotationConfigApplicationContext.getBean(PersonController.class);
+       // String[] ss=annotationConfigApplicationContext.getBeanDefinitionNames();
+//        for(String  s:ss){
+//            System.out.println(s);
+//        }
+        //System.out.println(personController.equals(personController2));
 
     }
 }
