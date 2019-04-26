@@ -9,7 +9,7 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 @Scope("singleton")
-@Lazy(true)
+@Lazy(false)
 /**
  * bean的作用范围
  */
@@ -17,6 +17,6 @@ import org.springframework.stereotype.Controller;
 //String SCOPE_PROTOTYPE = "prototype";
 public class PersonController {
     public PersonController() {
-        System.out.println("PersonController 初始化===》");
+        System.out.println("PersonController 实例化===》");
     }
 }

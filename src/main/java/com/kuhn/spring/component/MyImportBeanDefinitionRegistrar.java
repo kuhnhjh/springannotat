@@ -1,7 +1,6 @@
-package com.kuhn.spring.config;
+package com.kuhn.spring.component;
 
-import com.kuhn.spring.component.Child;
-import org.springframework.beans.factory.config.BeanDefinition;
+import com.kuhn.spring.dto.Child;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;

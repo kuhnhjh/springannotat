@@ -1,4 +1,4 @@
-package com.kuhn.spring.config;
+package com.kuhn.spring.component;
 
 import org.springframework.context.annotation.FilterType;
 import org.springframework.core.type.classreading.MetadataReader;

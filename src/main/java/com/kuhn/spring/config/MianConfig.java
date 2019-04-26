@@ -1,9 +1,8 @@
 package com.kuhn.spring.config;
 
-import com.kuhn.spring.dto.Person;
+import com.kuhn.spring.component.CustomizeRule;
+import com.kuhn.spring.component.MyImportBeanDefinitionRegistrar;
 import org.springframework.context.annotation.*;
-import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 
 /**
  * 1.Spring注解式开发
